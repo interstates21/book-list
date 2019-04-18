@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BookList</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container mt-3 lg">
+    <h1 class="text-center">
+        Awesome Books
+    </h1>
+    <form action="" id="book-form" class="text-center mt-4">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-2 mt-2">
+                        <label for="title"> Title </label>
+                </div>
+                <div class="col-sm-8">
+                        <input type="text" class="form-control" id="title">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-2 mt-2">
+                        <label for="author"> Author </label>
+                </div>
+                <div class="col-sm-8">
+                        <input type="text" class="form-control" id="author">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-2 mt-2">
+                        <label for="id"> ID </label>
+                </div>
+                <div class="col-sm-8">
+                        <input type="text" class="form-control" id="id">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-2 mt-2">
+                        <label for="info"> Your Review </label>
+                </div>
+                <div class="col-sm-8">
+                        <textarea name="info" class="form-control" id="info"></textarea>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="AddBoook" class="btn btn-primary">
+    </form>
+    <table style="border-top:white 2px solid" class="table mt-4">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ID</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id ="book-list"></tbody>
+    </table>
+</div>
+<div id="about">
+    <div class="jumbotron">
+        <span class="about-close"> x </span>
+        <h2> Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, magnam reiciendis! Porro voluptates quasi dolore!</p>
+    </div>
+</div>
+<script src="./js/app.js"></script>
+</body>
+</html>
